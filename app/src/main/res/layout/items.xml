@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="#EB6440"
+    android:outlineAmbientShadowColor="@color/black"
+    android:backgroundTint="#EB6440"
+    app:cardCornerRadius="10dp">
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/layout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="175dp"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:background="@drawable/hotelss"-->
+    <!--        android:gravity="center_horizontal"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:weightSum="10">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/category_image"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="10dp"-->
+    <!--            android:layout_weight="7.5"-->
+    <!--            android:visibility="visible" />-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:layout_weight="2.5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/product_brand_name"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="5"-->
+    <!--                android:fontFamily="sans-serif-condensed-light"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="Adidas"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="40sp" />-->
+
+    <!--        </LinearLayout>-->
+    <!--    </LinearLayout>-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/product_brand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Adidas"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

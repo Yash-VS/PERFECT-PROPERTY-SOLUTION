@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {url "https://releases.aspose.com/java/repo/"}
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {url "https://releases.aspose.com/java/repo/"}
+        flatDir {dirs 'libs'}
+    }
+}
+rootProject.name = "PPT_APPLICATION"
+include ':app'

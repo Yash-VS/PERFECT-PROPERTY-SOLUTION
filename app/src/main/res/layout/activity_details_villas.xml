@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F6EE"
+    android:backgroundTint="#F9F6EE"
+    android:orientation="vertical"
+    tools:context=".Details_villas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#F9F6EE"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#F9F6EE"
+            android:elevation="5dp"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:onClick="goBack"
+                    android:src="@drawable/ic_back_arrow"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Villas Details"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="#F9F6EE"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/file_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_input_bg"
+                android:hint="File Name"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_input_bg"
+                android:hint="Location"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/carpet_Area"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_input_bg"
+                android:hint="Carpet Area"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/consultant_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_input_bg"
+                android:hint="Consultant name"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/Floor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_input_bg"
+                android:hint="Floors"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/bed_room"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_input_bg"
+                android:hint="Bed Rooms"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/kitchen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_input_bg"
+                android:hint="Kitchen"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/hall_room"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_input_bg"
+                android:hint="Hall Room"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/buildtype"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_input_bg"
+                android:hint="Furnished/Semi Furnished/ Bare Shell"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/washroom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_input_bg"
+                android:hint="No. of Washrooms"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/parking"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_input_bg"
+                android:hint="Parking"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/security"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/text_input_bg"
+                android:hint="Security Deposit"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:visibility="visible"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:layout_height="wrap_content">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:background="@drawable/text_input_bg"-->
+            <!--                    android:layout_height="wrap_content">-->
+            <!--                    <Spinner-->
+            <!--                        android:id="@+id/product_category_Spinner"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_margin="1dp"-->
+            <!--                        />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:visibility="visible"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:layout_height="wrap_content">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:background="@drawable/text_input_bg"-->
+            <!--                    android:layout_height="wrap_content">-->
+            <!--                    <Spinner-->
+            <!--                        android:id="@+id/product_brand_Spinner"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_margin="1dp"-->
+            <!--                        />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:visibility="visible"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:layout_height="wrap_content">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:background="@drawable/text_input_bg"-->
+            <!--                    android:layout_height="wrap_content">-->
+            <!--                    <Spinner-->
+            <!--                        android:id="@+id/product_size_type_Spinner"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_margin="1dp"-->
+            <!--                        />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/top_size_layout"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:orientation="vertical"-->
+            <!--                android:visibility="gone"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:layout_height="wrap_content">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:background="@drawable/text_input_bg"-->
+            <!--                    android:layout_height="wrap_content">-->
+            <!--                    <Spinner-->
+            <!--                        android:id="@+id/product_size_Spinner"-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="50dp"-->
+            <!--                        android:layout_margin="1dp"-->
+            <!--                        />-->
+            <!--                </LinearLayout>-->
+            <!--            </LinearLayout>-->
+
+            <EditText
+                android:id="@+id/asking_rent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/text_input_bg"
+                android:drawableLeft="@drawable/ic_dollar_currency"
+                android:drawablePadding="10dp"
+                android:hint="Asking Rent Per sq. ft."
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/front_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Front Photo"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/upload_img_card"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/front_image"
+                        android:src="@drawable/ic_upload_photo"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:layout_width="280dp"/>
+
+                    <ImageView
+                        android:id="@+id/upload_front_img_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="116dp"
+                        android:elevation="50dp"
+                        android:onClick="capture"
+                        android:src="@drawable/ic_camera_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageView
+                        android:id="@+id/gallery_front_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="40dp"
+                        android:elevation="50dp"
+                        android:onClick="gallery"
+                        android:src="@drawable/upload"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/long_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Long View"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/longcard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/long_image"
+                        android:src="@drawable/ic_upload_photo"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:layout_width="280dp" />
+
+                    <ImageView
+                        android:id="@+id/long_img_upload_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="116dp"
+                        android:elevation="50dp"
+                        android:onClick="capture"
+                        android:src="@drawable/ic_camera_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageView
+                        android:id="@+id/gallery_long_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="40dp"
+                        android:elevation="50dp"
+                        android:onClick="gallery"
+                        android:src="@drawable/upload"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/parking_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Parking"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/parkingcard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/parking_image"
+                        android:src="@drawable/ic_upload_photo"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:layout_width="280dp" />
+
+                    <ImageView
+                        android:id="@+id/parking_img_upload_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="116dp"
+                        android:elevation="50dp"
+                        android:onClick="capture"
+                        android:src="@drawable/ic_camera_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck"  />
+
+                    <ImageView
+                        android:id="@+id/gallery_parking_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="40dp"
+                        android:elevation="50dp"
+                        android:onClick="gallery"
+                        android:src="@drawable/upload"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/inner_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Inner View"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/innercard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/inner_image"
+                        android:src="@drawable/ic_upload_photo"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:layout_width="280dp"/>
+
+                    <ImageView
+                        android:id="@+id/inner_img_upload_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="116dp"
+                        android:elevation="50dp"
+                        android:onClick="capture"
+                        android:src="@drawable/ic_camera_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck"  />
+
+                    <ImageView
+                        android:id="@+id/gallery_inner_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="40dp"
+                        android:elevation="50dp"
+                        android:onClick="gallery"
+                        android:src="@drawable/upload"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/inner_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Inner View"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/innercard2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/inner_image2"
+                        android:src="@drawable/ic_upload_photo"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:layout_width="280dp"/>
+
+                    <ImageView
+                        android:id="@+id/inner_img_upload_btn2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="116dp"
+                        android:elevation="50dp"
+                        android:onClick="capture"
+                        android:src="@drawable/ic_camera_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageView
+                        android:id="@+id/gallery_inner2_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="40dp"
+                        android:elevation="50dp"
+                        android:onClick="gallery"
+                        android:src="@drawable/upload"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/inner_img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Inner View"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/innercard3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/inner_image3"
+                        android:src="@drawable/ic_upload_photo"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:layout_width="280dp"/>
+
+                    <ImageView
+                        android:id="@+id/inner_img_upload_btn3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="116dp"
+                        android:elevation="50dp"
+                        android:onClick="capture"
+                        android:src="@drawable/ic_camera_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck"  />
+
+                    <ImageView
+                        android:id="@+id/gallery_inner3_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="40dp"
+                        android:elevation="50dp"
+                        android:onClick="gallery"
+                        android:src="@drawable/upload"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/pantry_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Pantry"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pantrycard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/pantry_image"
+                        android:src="@drawable/ic_upload_photo"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:layout_width="280dp"/>
+
+                    <ImageView
+                        android:id="@+id/pantry_img_upload_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="116dp"
+                        android:elevation="50dp"
+                        android:onClick="capture"
+                        android:src="@drawable/ic_camera_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageView
+                        android:id="@+id/gallery_pantry_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="40dp"
+                        android:elevation="50dp"
+                        android:onClick="gallery"
+                        android:src="@drawable/upload"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/terrace_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Terrace View"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/terracecard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/terrace_image"
+                        android:src="@drawable/ic_upload_photo"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:layout_width="280dp"/>
+
+                    <ImageView
+                        android:id="@+id/terrace_img_upload_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="116dp"
+                        android:elevation="50dp"
+                        android:onClick="capture"
+                        android:src="@drawable/ic_camera_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageView
+                        android:id="@+id/gallery_terrace_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="40dp"
+                        android:elevation="50dp"
+                        android:onClick="gallery"
+                        android:src="@drawable/upload"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/washroom_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Wash Room"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/washroomcard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/washroom_image"
+                        android:src="@drawable/ic_upload_photo"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:layout_width="280dp" />
+
+                    <ImageView
+                        android:id="@+id/washroom_img_upload_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="116dp"
+                        android:elevation="50dp"
+                        android:onClick="capture"
+                        android:src="@drawable/ic_camera_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageView
+                        android:id="@+id/gallery_washroom_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="40dp"
+                        android:elevation="50dp"
+                        android:onClick="gallery"
+                        android:src="@drawable/upload"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/floormapimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Floor Map"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/floormapcard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/floor_map_image"
+                        android:src="@drawable/ic_upload_photo"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:layout_width="280dp" />
+
+                    <ImageView
+                        android:id="@+id/floor_map_img_upload_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="116dp"
+                        android:elevation="50dp"
+                        android:onClick="capture"
+                        android:src="@drawable/ic_camera_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <ImageView
+                        android:id="@+id/gallery_floor_map_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="40dp"
+                        android:elevation="50dp"
+                        android:onClick="gallery"
+                        android:src="@drawable/upload"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:tint="@color/black"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Description"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/text_input_bg">
+
+                <EditText
+                    android:id="@+id/description_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:background="@null"
+                    android:gravity="start|top"
+                    android:hint="Type here"
+                    android:inputType="textMultiLine"
+                    android:minLines="4"
+                    android:padding="6dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:visibility="gone" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_shape"
+                android:onClick="onClickPPT"
+                android:text="CONFIRM AND DOWNLOAD PPT FILE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dwnld_excel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_shape"
+                android:onClick="onClickExcel"
+                android:text="CONFIRM AND DOWNLOAD EXCEL FILE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/share_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_shape"
+                android:text="Share"
+                android:onClick="mail"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
